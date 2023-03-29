@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>	
+	<link rel="stylesheet" type="text/css" href="Master.css">
+	<script type="text/javascript" src="Contact.js"></script>
+
+	<style type="text/css">
+		label{
+			font-weight: bolder;
+			font-size: 18px;
+		}
+    body {
+        background-color: #d9d9d9;
+      }
+		span{
+			font-style: italic;
+			color: red;
+			font-size: 16px;
+		}
+    #collapsibleNavbar a:hover {
+        color: black;
+        box-shadow: 0px 0px 10px aqua;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+            <img
+              src="logoimg/Quality.png"
+              class="img-fluid mx-auto d-block"
+              height="70"
+              width="170"
+              style="bottom: 10px; float: right" />
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6"
+            style="margin: auto">
+            <h1 class="display-4" style="font-family: Gabriola">
+              Quality Cloths
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="navbar navbar-expand-md navbar-dark sticky-top"
+      style="background-color: #5e8583">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mx-auto" style="text-align: -webkit-center">
+            <li class="nav-item" style="font-size: 17px">
+              <a
+                class="nav-link"
+                href="index.html"
+                style="
+                  width: 130px;
+                  text-align: center;
+                  color: white;
+                  padding: 10px 10px;
+                "
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="jeans.html"
+                style="
+                  width: 130px;
+                  text-align: center;
+                  color: white;
+                  padding: 10px 10px;
+                "
+                >JEANS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="shirts.html"
+                style="
+                  width: 130px;
+                  text-align: center;
+                  color: white;
+                  padding: 10px 10px;
+                "
+                >SHIRTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="T-shirts.html"
+                style="
+                  width: 130px;
+                  text-align: center;
+                  color: white;
+                  padding: 10px 10px;
+                "
+                >T-SHIRTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="hoddie.html"
+                style="
+                  width: 130px;
+                  text-align: center;
+                  color: white;
+                  padding: 10px 10px;
+                "
+                >HODDIE</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="services.html"
+                style="
+                  width: 130px;
+                  text-align: center;
+                  color: white;
+                  padding: 10px 10px;
+                "
+                >SERVICES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                style="
+                  width: 130px;
+                  text-align: center;
+                  color: white;
+                  padding: 10px 10px;
+                "
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+        <div class="contact" style="border:3px solid  #4b5257; border-radius: 20px;">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h3 style="text-align: center; padding-top: 15px; ">Please Fill out the below details.</h3><br>
+                </div><br><br>
+
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mx-auto">
+                    <form class="form-inline"  name="form1" class="frm_message" method="post" autocomplete="off" onsubmit="return Reg()" style="padding-bottom: 20px; margin-left: 10px;">
+                        <div class="form-group">
+                              <label for="Fname">First Name: &nbsp;&nbsp;</label>
+                              <input type="text" class="form-control" id="Fname" placeholder="Enter First Name" name="Fname" required=""><span id="Fnamemsg"></span>
+                        </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <div class="form-group">
+                              <label for="Lname">Last Name: &nbsp;&nbsp;</label>
+                              <input type="text" class="form-control" id="Lname" placeholder="Enter Last Name" name="Lname" required=""><span id="Lnamemsg" required=""></span>
+                        </div><br><br><br>
+
+                        <div class="form-group">
+                             <label for="Cnumber">Contact No: &nbsp;</label>
+                              <input type="number" class="form-control" id="Cnumber" placeholder="Enter Contact No" name="Cnumber" required=""> <span id="mobilemsg"></span>
+                        </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <div class="form-group">
+                              <label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                              <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required="" > <span id="emailmsg"></span>
+                        </div><br><br><br>
+
+                        <input style="font-size: 18px; width: 120px; background: #77b300; border:1px solid #77b300;"  type="submit" name="" value="SUBMIT" class="btn btn-primary;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			
+                        <input style="font-size: 18px; width: 120px;" type="Reset" name="" value="RESET" class="btn btn-danger">
+                    </form>
+                </div>
+            </div>		
+        </div>
+    </div>
+</section><br> 
+</body>
+</html>
